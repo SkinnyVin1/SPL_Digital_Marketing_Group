@@ -8,6 +8,7 @@
 }
 body{
     background-color: #073c465e;
+    height: 200vh;
 }
 
 nav{
@@ -51,19 +52,7 @@ nav{
     padding: 0 25px;
     text-transform: uppercase;
 }
-.naviLinks button{
-    width: 145px;
-    height: 40px;
 
-    border: none;
-    background-color: white;
-    border-radius: 5px;
-
-    color:#073c46f1;
-    font-size: 1rem;
-
-    cursor: pointer;
-}
 
 .hero{
     position: relative;
@@ -77,20 +66,38 @@ nav{
     background-repeat: no-repeat;
     background-size: 100%;
     position: top;
-
     color: white;
 
 }
-.hero img{
-    max-width: 100%;
-    width: 100%;
-
-    opacity:.4;
-}
 
 .heroContent{
+    width: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(50% -50%);
+    top: 56%;
+    left: 10%;
+    transform: translateY(-45%);
+}
+
+.heroContent p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.heroContent h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+.heroContent button{
+    width: 145px;
+    height: 40px;
+
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+
+    color:white;
+    font-size:1.5rem;
+    cursor: pointer;
+
 }
