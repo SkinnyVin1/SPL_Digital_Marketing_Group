@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #073c465e;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 25px 0 25px;
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+.naviLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.naviLinks ul{
+    /* text-decoration: none; */
+    list-style: none;
+    
+    display: flex;
+    
+    
+}
+.naviLinks ul li a{
+    color: white;
+    text-decoration: none;
+
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+.naviLinks button{
+    width: 145px;
+    height: 40px;
+
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+
+    color:#073c46f1;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.hero{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.593), #073c46d3), url(/hero.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: top;
+
+    color: white;
+
+}
+.hero img{
+    max-width: 100%;
+    width: 100%;
+
+    opacity:.4;
+}
+
+.heroContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50% -50%);
+}
