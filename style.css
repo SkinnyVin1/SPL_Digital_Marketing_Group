@@ -61,7 +61,7 @@ nav{
     height: 100vh;
     overflow: hidden;
 
-    background-image:linear-gradient(rgba(0, 0, 0, 0.593), #073c46d3), url(/hero.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.593), #073c46d3), url(./hero.jpg);
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -85,7 +85,7 @@ nav{
     letter-spacing: 2px;
 }
 .heroContent h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 .heroContent button{
