@@ -101,6 +101,7 @@ nav{
 .heroContent h1{
     font-size: 4rem;
     font-weight: 400;
+    line-height: 75px;
 }
 .heroContent button{
     width: 145px;
