@@ -7,10 +7,10 @@
     scroll-behavior: smooth;
 
 }
-body{
-    /* background-color: #073c465e; */
-    /* height: 200vh; */
-}
+/* body{
+    background-color: #073c465e;
+    height: 200vh;
+} */
 /* 
 ===================================
 Navigation Bar Section
@@ -122,17 +122,27 @@ Hero Section
     left: 10%;
     transform: translateY(-45%);
 }
+@keyframes hero {
+	0% {
+		opacity: 0;
+	}
 
+	100% {
+		opacity: 1;
+	}
+}
 .heroContent p{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: hero .5s ease 0s 1 normal forwards;
 }
 .heroContent h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 75px;
+    line-height: 95px;
+    animation: hero 1s ease 0s 1 normal forwards;
 }
 .heroContent button{
     width: 180px;
@@ -145,6 +155,7 @@ Hero Section
     color:white;
     font-size:1.5rem;
     cursor: pointer;
+    animation: hero 1.5s ease 0s 1 normal forwards;
 }
 
 
@@ -153,7 +164,15 @@ Hero Section
 Body 1st Section
 ===================================
 */
+@keyframes hero {
+	0% {
+		transform: translateY(0);
+	}
 
+	100% {
+		transform: translateY(-10px);
+	}
+}
 .firstBody{
     /* height: 100vh; */
     width: 100%;
@@ -173,12 +192,12 @@ Body 1st Section
     display: flex;
     flex-direction: column;
     align-items: end;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 .txtContent h1{
-    font-size: 4.3rem;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .imgContent{
@@ -189,5 +208,12 @@ Body 1st Section
 }
 .imgContent img{
     max-height: 100%;
-    height: 100%;
+    height: 75%;
+    animation: hero 1s linear 0s infinite alternate forwards;
+}
+.imgContent h1{
+    color: #073a46;
+    font-size: 3.5rem;
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.4);
+    letter-spacing: 10px;
 }
