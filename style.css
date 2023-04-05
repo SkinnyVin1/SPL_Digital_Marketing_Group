@@ -164,7 +164,7 @@ Hero Section
 Body 1st Section
 ===================================
 */
-@keyframes hero {
+@keyframes heroAnim {
 	0% {
 		transform: translateY(0);
 	}
@@ -209,11 +209,25 @@ Body 1st Section
 .imgContent img{
     max-height: 100%;
     height: 75%;
-    animation: hero 1s linear 0s infinite alternate forwards;
+    animation: heroAnim 1s linear 0s infinite alternate forwards;
 }
 .imgContent h1{
     color: #073a46;
     font-size: 3.5rem;
     text-shadow: 1px 2px 8px rgba(0,0,0,0.4);
     letter-spacing: 10px;
+}
+.logoTxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logoTxt p{
+    line-height: 16px;
+}
+.logoTxt h2 {
+    font-weight: 500;
+    font-size: 38px;
+    
 }
