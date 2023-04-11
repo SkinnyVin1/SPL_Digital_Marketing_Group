@@ -11,9 +11,9 @@
     background-color: #073c461f;
     height: 200vh;
 } */
-.body-container{
+/* .body-container{
     background:linear-gradient( rgba(0, 0, 0, 0), #217484a3);
-}
+} */
 /* 
 ===================================
 Navigation Bar Section
@@ -235,15 +235,16 @@ Body 1st Section
     
 }
 
-/* 
+/*
 ===================================
 Body 2nd Section
 ===================================
 */
-/* .thirBody{
-    background:linear-gradient( rgba(0, 0, 0, 0), #217484ca);
-} */
-/* .thirBody{
+.secBody{
+    background: #073c46;
+    color: white;
+}
+ /* .thirBody{
     background:linear-gradient( #21748494,  rgba(0, 0, 0, 0));
 } */
 
@@ -255,12 +256,13 @@ Footer
 */
 footer{
     /* background: linear-gradient(#217484ca, #073c46e6) ; */
-    background-color: #073c46d3;
+    background-color: #073c46;
     /* border-top: solid 1px silver; */
     height: 30vh;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
 
 }
 footer .footlogo a{
