@@ -237,6 +237,34 @@ Body 1st Section
 Body 2nd Section
 ===================================
 */
-.secBody{
-    background:linear-gradient( rgba(0, 0, 0, 0), #21748494);
+.thirBody{
+    background:linear-gradient( rgba(0, 0, 0, 0), #217484ca);
+}
+/* .thirBody{
+    background:linear-gradient( #21748494,  rgba(0, 0, 0, 0));
+} */
+
+
+/* 
+===================================
+Footer
+===================================
+*/
+footer{
+    background: linear-gradient(#217484ca, #073c46e6) ;
+    border-top: solid 1px silver;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    place-items: center;
+
+}
+footer .footlogo a{
+    border: none;
+}
+footer .footlogo{
+    
+
+    display: flex;
+    justify-content: center; 
 }
