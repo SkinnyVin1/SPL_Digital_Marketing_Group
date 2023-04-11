@@ -192,7 +192,7 @@ Body 1st Section
     display: flex;
     flex-direction: column;
     align-items: end;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 .txtContent h1{
