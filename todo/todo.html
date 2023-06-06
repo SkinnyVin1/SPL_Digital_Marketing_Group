@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cryptocurrency Rates</title>
+  <style>
+    /* CSS styles for the list app */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #ratesList {
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 10px;
+    }
+    #ratesList li {
+      margin: 10px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    #loadMoreBtn {
+      display: block;
+      margin: 20px auto;
+    }
+    #loadingIndicator {
+      text-align: center;
+      margin: 20px auto;
+      display: none;
+    }
+    #noMoreData {
+      text-align: center;
+      margin: 20px auto;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <ul id="ratesList"></ul>
+  <div id="loadingIndicator">Loading...</div>
+  <div id="noMoreData">No more records to show.</div>
+  <button id="loadMoreBtn">Load More</button>
+
+  <script>
+    // JavaScript code for the list app
+    let currentPage = 1;
+    const pageSize = 10;
+    let isLoading = false;
+
+    // Function to fetch cryptocurrency rates from the API
+    const fetchRates = async () => {
+      try {
+        isLoading = true;
+        document.getElementById('loadingIndicator').style.display = 'block';
+        const response = await fetch('https://api.coingecko.com/api/v3/exchange_rates');
+        const data = await response.json();
+        return Object.entries(data.rates).map(([name, value]) => ({ name, value }));
+      } catch (error) {
+        console.error('Error fetching rates:', error);
+        return [];
+      } finally {
+        isLoading = false;
+        document.getElementById('loadingIndicator').style.display = 'none';
+      }
+    };
+
+    // Function to render rates in the list
+    const renderRates = (rates) => {
+      const ratesList = document.getElementById('ratesList');
+      ratesList.innerHTML = '';
+      rates.forEach(rate => {
+        const li = document.createElement('li');
+        li.textContent = `${rate.name}: ${rate.value.value}`;
+        ratesList.appendChild(li);
+      });
+    };
+
+    // Function to load more rates as user scrolls down
+    const loadMoreRates = async () => {
+      if (!isLoading) {
+        currentPage++;
+        const rates = await fetchRates();
+        renderRates(rates);
+      }
+    };
+
+    // Add event listener to load more button
+    document.getElementById('loadMoreBtn').addEventListener('click', loadMoreRates);
+
+    // Add event listener for scrolling to the bottom of the page
+    window.addEventListener('scroll', () => {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        loadMoreRates();
+      }
+    });
+
+    // Initial load of rates
+    const initialLoad = async () => {
+      const rates = await fetchRates();
+      renderRates(rates);
+    };
+    initialLoad();
+  </script>
+</body>
+</html>

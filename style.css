@@ -48,7 +48,7 @@ nav{
     background-color: #073c46d3;
     /* border: none; */
   }
-  .logo{
+  .navlogo{
     height: 100%;
   }
 .logo a{
@@ -260,17 +260,28 @@ footer{
     /* border-top: solid 1px silver; */
     height: 30vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 50px;
+    justify-content: center;
+    gap: 30px;
 
 }
 footer .footlogo a{
     border: none;
 }
-footer .footlogo{
-    
 
+footer .footlogo{
     display: flex;
     justify-content: center; 
+}
+.quicks ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.quicks ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
 }
