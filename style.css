@@ -189,7 +189,7 @@ Body 1st Section
     place-content: center;
 }
 .firstBody .txtContent{
-    padding: 45px 90px 45px 45px;
+    padding: 45px 120px 45px 45px;
     text-align: start;
     
     display: flex;
@@ -199,7 +199,7 @@ Body 1st Section
     gap: 20px;
 }
 .secBody .txtContent{
-    padding: 45px 45px 45px 90px;
+    padding: 45px 45px 45px 120px;
     text-align: end;
     
     display: flex;
@@ -209,7 +209,7 @@ Body 1st Section
     gap: 20px;
 }
 .thirBody .txtContent{
-    padding: 45px 90px 45px 45px;
+    padding: 45px 120px 45px 45px;
     text-align: start;
     
     display: flex;
