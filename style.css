@@ -188,9 +188,29 @@ Body 1st Section
     justify-content: center;
     place-content: center;
 }
-.txtContent{
-    padding: 45px;
+.firstBody .txtContent{
+    padding: 45px 90px 45px 45px;
+    text-align: start;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+.secBody .txtContent{
+    padding: 45px 45px 45px 90px;
     text-align: end;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+.thirBody .txtContent{
+    padding: 45px 90px 45px 45px;
+    text-align: start;
     
     display: flex;
     flex-direction: column;
