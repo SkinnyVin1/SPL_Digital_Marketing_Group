@@ -189,7 +189,7 @@ Body 1st Section
     place-content: center;
 }
 .firstBody .txtContent{
-    padding: 45px 120px 45px 45px;
+    padding: 45px 200px 45px 45px;
     text-align: start;
     
     display: flex;
@@ -199,7 +199,7 @@ Body 1st Section
     gap: 20px;
 }
 .secBody .txtContent{
-    padding: 45px 45px 45px 120px;
+    padding: 45px 45px 45px 200px;
     text-align: end;
     
     display: flex;
@@ -209,7 +209,7 @@ Body 1st Section
     gap: 20px;
 }
 .thirBody .txtContent{
-    padding: 45px 120px 45px 45px;
+    padding: 45px 200px 45px 45px;
     text-align: start;
     
     display: flex;
@@ -280,16 +280,29 @@ footer{
     /* border-top: solid 1px silver; */
     height: 30vh;
     display: flex;
-    flex-direction: column;
+   /* flex-direction: row; */
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: center; 
+    gap: 200px;
 
 }
 footer .footlogo a{
     border: none;
 }
 
+.footContainer{
+    width:80%;
+    padding: 30px 0 30px 0;
+
+    border: 1px white;
+    border-style:  solid none solid none ;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
 footer .footlogo{
     display: flex;
     justify-content: center; 
@@ -306,7 +319,7 @@ footer .footlogo{
 }
 .contacts{
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 .contacts a {
     text-decoration: none;
