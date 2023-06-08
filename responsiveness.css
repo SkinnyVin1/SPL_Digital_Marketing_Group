@@ -1,0 +1,26 @@
+/* Homepage */
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .naviLinks{
+        display:none;
+    }
+    .firstBody{
+        flex-wrap:wrap-reverse;
+    }
+    .secBody{
+        flex-wrap:wrap;
+    }
+    .firstBody .txtContent{
+        padding:45px;
+    }
+    footer{
+        flex-wrap: wrap;
+ 
+    }
+    footer .footContainer{
+        flex-direction:column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 40px;
+    }
+}
