@@ -295,8 +295,8 @@ footer .footlogo a{
     width:80%;
     padding: 30px 0 30px 0;
 
-    border: 1px white;
-    border-style:  solid none solid none ;
+    /* border: 1px white; */
+    /* border-style:  solid none solid none ; */
 
     display: flex;
     flex-direction: row;
@@ -375,6 +375,46 @@ About Us Page
     padding-top: 15%;
   
 }
+.heroTitle h1{
+    font-size: 5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.body-content{
+    margin: 0 10%;
+    height: 70vh;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content:center;
+    align-items: center
+}
+.imgSec{
+    height:100%;
+    width: 100%;
+    display: grid;
+    place-items: center
+
+}
+.imgSec-container{
+    width: 300px;
+    height: 300px;
+    
+    border: 15px #073a46; 
+    border-style:  solid ;
+
+    display:grid;
+    place-items: center;
+
+}
+.imgSec-container h1{
+    font-size: 6rem;
+    color:#073a46;
+    text-align:center;
+    line-height: 100px;
+    /* padding: 10px; */
+}
 
 
 /* 
@@ -409,6 +449,7 @@ Services
     padding-top: 15%;
   
 }
+
 
 
 
