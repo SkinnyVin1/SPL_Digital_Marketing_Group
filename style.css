@@ -29,11 +29,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px silver;
+
 
     /* padding: 0 0 0 25px; */
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
     z-index: 1;
+    transition: .5s ease-in-out;
 }
 .imageContainer{
     display: flex;
@@ -46,8 +47,15 @@ nav{
 }
   .nav-bar.scrolled {
     background-color: #073c46d3;
-    /* border: none; */
+    border-bottom: solid 1px silver;
   }
+  .nav-bar.scrolled .logo a{
+    border-right: solid 1px silver;
+  }
+  .nav-bar.scrolled .messageContainer{
+    border-left: solid 1px silver;
+  }
+
   .navlogo{
     height: 100%;
   }
@@ -55,11 +63,12 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: solid 1px silver;
+
     color: white;
     width: 300px;
     height: 100%;
     text-decoration: none;
+    transition: .5s ease-in-out;
 }
 .naviLinks{
     display: flex;
@@ -89,11 +98,11 @@ nav{
 
     width: 100px;
     height: 100%;
-    border-left: solid 1px silver;
+    /* border-left: solid 1px silver; */
+    transition: .5s ease-in-out
 }
 .messageContainer i{
     cursor: pointer;
-
 }
 
 
@@ -382,7 +391,7 @@ About Us Page
     letter-spacing: 5px;
 }
 .body-content{
-    margin: 0 10%;
+    margin: 0 10% 0 5%;
     height: 70vh;
 
     display: grid;
@@ -414,6 +423,24 @@ About Us Page
     text-align:center;
     line-height: 100px;
     /* padding: 10px; */
+}
+.abtContent{
+    padding: 0 10px;
+}
+.abtContent h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #073a46;
+
+}
+.abtContent h2{
+    font-weight: 500;
+    color: #073a46;
+}
+.abtContent p{
+    font-weight: 500;
+    
+    padding-top: 10px;
 }
 
 
