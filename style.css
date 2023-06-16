@@ -55,7 +55,7 @@ nav{
   .nav-bar.scrolled .messageContainer{
     border-left: solid 1px silver;
   }
-
+    
   .navlogo{
     height: 100%;
   }
@@ -437,10 +437,56 @@ About Us Page
     font-weight: 500;
     color: #073a46;
 }
-.abtContent p{
+.abtContent .abtxt{
     font-weight: 500;
     
     padding-top: 10px;
+}
+
+.rate{
+    width: 100%;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rate .star i{
+    font-size: 5rem;
+    color: #073a46;
+}
+.startype{
+    padding-top: 20px;
+    line-height: 45px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.startype p{
+    padding: 0;
+    font-size: 1.2rem;
+    color: #073a46;
+}
+.proj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 20px;
+}
+.proj h1, .star h1{
+    font-size: 4rem;
+}
+.proj p{
+    font-size: 1.5rem;
+    color: #073a46;
+    padding-left: 10px;
 }
 
 
